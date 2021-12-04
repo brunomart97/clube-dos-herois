@@ -10,7 +10,9 @@ import {
   Poppins_700Bold
 } from '@expo-google-fonts/poppins';
 import AppLoading from 'expo-app-loading';
-import { View, Text } from 'react-native';
+
+import { Routes } from './src/routes';
+import { ContainerChildren } from './src/components/ContainerChildren';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,13 +29,13 @@ export default function App() {
   };
 
   return (
-    <View>
+    <ContainerChildren>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
-      <Text>Open up App.tsx to start working on your app!</Text>
-    </View>
+      <Routes />
+    </ContainerChildren>
   );
 }
