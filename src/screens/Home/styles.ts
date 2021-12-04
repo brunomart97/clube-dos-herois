@@ -4,6 +4,6 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
   screen: {
     flex: 1,
-    backgroundColor: theme.colors.ice
+    backgroundColor: theme.colors.white
   }
 });

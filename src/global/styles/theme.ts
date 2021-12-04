@@ -4,7 +4,10 @@ export const theme = {
     ice: '#F8F7FA',
     red: '#D11414',
     lightRed: '#DB4E4E',
-    darkRed: '#A00B0B'
+    darkRed: '#A00B0B',
+    black: '#000000',
+    lightGray: '#EDEFF2',
+    darkGray: '#828c9b'
   },
   fonts: {
     poppins200: 'Poppins_200ExtraLight',

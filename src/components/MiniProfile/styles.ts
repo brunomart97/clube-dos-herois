@@ -4,13 +4,21 @@ import { theme } from '../../global/styles/theme';
 export const styles = StyleSheet.create({
   container: {
     width: '100%',
+    height: 120,
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
+    alignItems: 'center',
+    backgroundColor: theme.colors.red
+  },
+  subcontainer: {
+    width: '100%',
     height: 80,
     paddingHorizontal: 20,
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center',
-    backgroundColor: theme.colors.red
+    alignItems: 'center'
   },
   // Left
   left: {
@@ -71,6 +79,13 @@ export const styles = StyleSheet.create({
   image: {
     width: 55,
     height: 55,
-    borderRadius: 10
+    borderRadius: 100
+  },
+  //Bottom
+  bottom: {
+    width: '100%',
+    height: 30,
+    borderTopLeftRadius: 100,
+    backgroundColor: theme.colors.white
   }
 });
