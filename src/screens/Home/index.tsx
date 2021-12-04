@@ -3,9 +3,12 @@ import { View, Text } from 'react-native';
 
 import { styles } from './styles';
 
+import { StatusBarFixed } from '../../components/StatusBarFixed';
+
 export function Home() {
   return (
-    <View style={styles.container}>
+    <View>
+      <StatusBarFixed />
       <Text>Home</Text>
     </View>
   );
