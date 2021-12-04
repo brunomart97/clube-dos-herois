@@ -4,12 +4,13 @@ import { View, Text } from 'react-native';
 import { styles } from './styles';
 
 import { StatusBarFixed } from '../../components/StatusBarFixed';
+import { MiniProfile } from '../../components/MiniProfile';
 
 export function Home() {
   return (
-    <View>
+    <View style={styles.screen}>
       <StatusBarFixed />
-      <Text>Home</Text>
+      <MiniProfile />
     </View>
   );
 }

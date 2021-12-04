@@ -2,7 +2,9 @@ export const theme = {
   colors: {
     white: '#FFFFFF',
     ice: '#F8F7FA',
-    red: '#D11414'
+    red: '#D11414',
+    lightRed: '#DB4E4E',
+    darkRed: '#A00B0B'
   },
   fonts: {
     poppins200: 'Poppins_200ExtraLight',
