@@ -1,0 +1,3 @@
+interface navigateToBadgeProps {
+  navigateToBadge: () => void;
+}

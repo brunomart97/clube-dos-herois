@@ -1,5 +1,6 @@
 interface MainCardType {
   color: string,
   text: string,
-  icon: number
+  icon: number,
+  navigateToBadge: () => void;
 };
