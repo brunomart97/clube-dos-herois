@@ -11,7 +11,8 @@ export function AppRoutes() {
     <Navigator
       initialRouteName="Home"
       screenOptions={{
-        headerShown: false
+        headerShown: false,
+        presentation: 'transparentModal'
       }}
     >
       <Screen

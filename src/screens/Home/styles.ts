@@ -5,8 +5,5 @@ export const styles = StyleSheet.create({
   container: {
     flex: 1,
     backgroundColor: theme.colors.white
-  },
-  screenSubcontainer: {
-    flex: 1
   }
 });

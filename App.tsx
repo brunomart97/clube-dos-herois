@@ -12,6 +12,7 @@ import {
 } from '@expo-google-fonts/poppins';
 import AppLoading from 'expo-app-loading';
 
+import { StatusBarFixed } from './src/components/StatusBarFixed';
 import { Routes } from './src/routes';
 
 export default function App() {
@@ -35,6 +36,7 @@ export default function App() {
         backgroundColor="transparent"
         translucent
       />
+      <StatusBarFixed />
       <Routes />
     </NavigationContainer>  
   );

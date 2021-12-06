@@ -13,38 +13,34 @@ export function MainCard({
   navigateToBadge
 }: MainCardType) {
   return (
-    <View style={[{backgroundColor: color}, styles.container]}>
-      <Text style={styles.title}>{text}</Text>
-      {icon === 1 &&
-        <Pressable onPress={navigateToBadge}>
+    <Pressable onPress={navigateToBadge}>
+      <View style={[{backgroundColor: color}, styles.container]}>
+        <Text style={styles.title}>{text}</Text>
+        {icon === 1 &&
           <FontAwesome
             name="qrcode"
             size={80}
             position="center"
             color={theme.colors.red}
           />
-        </Pressable>
-      }
-      {icon === 2 &&
-        <Pressable onPress={navigateToBadge}>
+        }
+        {icon === 2 &&
           <Fontisto
             name="blood"
             size={80}
             position="center"
             color={theme.colors.red}
           />
-        </Pressable>
-      }
-      {icon === 3 &&
-        <Pressable onPress={navigateToBadge}>
+        }
+        {icon === 3 &&
           <Fontisto
             name="blood-drop"
             size={75}
             position="center"
             color={theme.colors.red}
           />
-        </Pressable>
-      }
-    </View>
+        }
+      </View>
+    </Pressable>
   );
 }

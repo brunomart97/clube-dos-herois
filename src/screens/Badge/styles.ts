@@ -3,6 +3,23 @@ import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    backgroundColor: theme.colors.white
+  },
+  header: {
+    width: '100%',
+    height: 90,
+    display: 'flex',
+    backgroundColor: theme.colors.white
+  },
+  backButton: {
+    width: '30%',
+    height: 90,
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'flex-start',
+    paddingHorizontal: 20,
+    borderBottomRightRadius: 30,
+    backgroundColor: theme.colors.red
   }
 });

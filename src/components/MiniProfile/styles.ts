@@ -85,7 +85,7 @@ export const styles = StyleSheet.create({
   bottom: {
     width: '100%',
     height: 30,
-    borderTopLeftRadius: 100,
+    borderTopLeftRadius: 50,
     backgroundColor: theme.colors.white
   }
 });

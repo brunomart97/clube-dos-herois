@@ -13,7 +13,7 @@ import { MainCard } from '../MainCard';
 export function MainSlide({ navigateToBadge }: navigateToBadgeProps) {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Clube dos Heróis</Text>
+      <Text style={styles.title}>Área do Herói</Text>
       <ScrollView
         style={styles.subcontainer}
         horizontal

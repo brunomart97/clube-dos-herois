@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'space-around'
   },
   title: {
-    fontFamily: theme.fonts.poppins600,
+    fontFamily: theme.fonts.poppins500,
     fontSize: 20,
     color: theme.colors.darkGray,
     marginLeft: 20
