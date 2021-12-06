@@ -6,6 +6,6 @@ export const styles = StyleSheet.create({
   container: {
     width: '100%',
     paddingTop: getStatusBarHeight(),
-    backgroundColor: theme.colors.red
+    backgroundColor: theme.colors.darkRed
   }
 });

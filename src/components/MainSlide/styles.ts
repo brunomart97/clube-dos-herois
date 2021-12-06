@@ -18,5 +18,5 @@ export const styles = StyleSheet.create({
     minHeight: 250,
     maxHeight: 250,
     paddingLeft: 20
-  },
+  }
 });

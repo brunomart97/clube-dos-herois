@@ -1,5 +1,6 @@
-import React from 'react';
-import { View } from 'react-native';
+import React, { useCallback } from 'react';
+import { View, ScrollView, Button } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 
 import { styles } from './styles';
 
@@ -8,11 +9,21 @@ import { MiniProfile } from '../../components/MiniProfile';
 import { MainSlide } from '../../components/MainSlide';
 
 export function Home() {
+  const navigation = useNavigation<NavigationProps>()
+
+  function navigateToBadge() {
+    navigation.navigate('Badge');
+  }
+
   return (
-    <View style={styles.screen}>
+    <View style={styles.container}>
       <StatusBarFixed />
-      <MiniProfile />
-      <MainSlide />
+      <ScrollView style={styles.screenSubcontainer}>
+        <MiniProfile />
+        <MainSlide
+          navigateToBadge={navigateToBadge}
+        />
+      </ScrollView>
     </View>
   );
 }

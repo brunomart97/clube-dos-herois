@@ -23,18 +23,18 @@ export function MainSlide() {
         <MainCard
           color={theme.colors.lightGray}
           text="Carteirinha do Clube"
-          icon="qrcode"
-          />
+          icon={1}
+        />
         <MainCard
           color={theme.colors.lightGray}
           text="Fazer Doação"
-          icon="blood"
-          />
+          icon={2}
+        />
         <MainCard
           color={theme.colors.lightGray}
-          text="Solicitar Doação"
-          icon="blood-drop"
-          />
+          text="Procurar Doadores"
+          icon={3}
+        />
       </ScrollView>
     </View>
   );

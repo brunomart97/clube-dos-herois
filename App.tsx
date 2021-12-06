@@ -1,6 +1,7 @@
 import React from 'react';
 import { StatusBar } from 'react-native';
 import { useFonts } from 'expo-font';
+import { NavigationContainer } from '@react-navigation/native';
 import {
   Poppins_200ExtraLight,
   Poppins_300Light,
@@ -12,7 +13,6 @@ import {
 import AppLoading from 'expo-app-loading';
 
 import { Routes } from './src/routes';
-import { ContainerChildren } from './src/components/ContainerChildren';
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -29,13 +29,13 @@ export default function App() {
   };
 
   return (
-    <ContainerChildren>
+    <NavigationContainer>
       <StatusBar
         barStyle="light-content"
         backgroundColor="transparent"
         translucent
       />
       <Routes />
-    </ContainerChildren>
+    </NavigationContainer>  
   );
 }

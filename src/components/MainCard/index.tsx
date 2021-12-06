@@ -1,9 +1,5 @@
 import React from 'react';
-import {
-  View,
-  Text,
-  Image
-} from 'react-native';
+import { View, Text } from 'react-native';
 import { theme } from '../../global/styles/theme';
 import { FontAwesome } from '@expo/vector-icons'; 
 import { Fontisto } from '@expo/vector-icons';
@@ -18,33 +14,30 @@ export function MainCard({
   return (
     <View style={[{backgroundColor: color}, styles.container]}>
       <Text style={styles.title}>{text}</Text>
-      {icon === 'qrcode' && (
+      {icon === 1 &&
         <FontAwesome
-          style={styles.icon}
           name="qrcode"
           size={80}
           position="center"
           color={theme.colors.red}
         />
-      )}
-      {icon === 'blood' && (
+      }
+      {icon === 2 &&
         <Fontisto
-          style={styles.icon}
           name="blood"
           size={80}
           position="center"
           color={theme.colors.red}
         />
-      )}
-      {icon === 'blood-drop' && (
+      }
+      {icon === 3 &&
         <Fontisto
-          style={styles.icon}
           name="blood-drop"
           size={75}
           position="center"
           color={theme.colors.red}
         />
-      )}
+      }
     </View>
   );
 }

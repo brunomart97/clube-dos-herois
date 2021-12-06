@@ -13,7 +13,7 @@ export const styles = StyleSheet.create({
   },
   subcontainer: {
     width: '100%',
-    height: 80,
+    height: 90,
     paddingHorizontal: 20,
     display: 'flex',
     flexDirection: 'row',
