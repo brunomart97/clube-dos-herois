@@ -11,6 +11,8 @@ import { theme } from '../../global/styles/theme';
 
 import { styles } from './styles';
 
+import { UserBadge } from '../../components/UserBadge';
+
 export function Badge() {
   const navigation = useNavigation<NavigationProps>();
 
@@ -33,6 +35,8 @@ export function Badge() {
           />
         </Pressable>
       </View>
+
+      <UserBadge />
     </ScrollView>
   );
 }
