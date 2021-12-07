@@ -2,13 +2,14 @@ import React from 'react';
 import {
   View,
   Image,
-  Text
+  Text,
+  ImageBackground
 } from 'react-native';
 import DashedLine from 'react-native-dashed-line';
 
 import { styles } from './styles';
 import { theme } from '../../global/styles/theme';
-import paperBackgroung from '../../assets/paperBackgroung.png';
+import mapBackground from '../../assets/mapBackground.png';
 
 export function UserBadge() {
   const urlImage: string = 'https://github.com/brunomart97.png';
@@ -16,13 +17,9 @@ export function UserBadge() {
   return (
     <View style={styles.container}>
       <View style={styles.subcontainerTop}>
-        <DashedLine
-          style={{marginTop: -3}}
-          dashLength={10}
-          dashThickness={8}
-          dashGap={5}
-          dashColor={theme.colors.white}
-          dashStyle={{borderRadius: 5 }}
+        <ImageBackground
+          source={mapBackground}
+          style={styles.imageBackground}
         />
 
         <View style={styles.headerTop}>
@@ -36,25 +33,16 @@ export function UserBadge() {
             <Text style={styles.bloodRequest}>0 Solicitações</Text>
           </View>
         </View>
+
+        <View style={styles.headerBottom}>
+          <Text style={styles.name}>Bruno Martins</Text>
+          <Text style={styles.age}>04/05/1997</Text>
+          <Text style={styles.levelHero}>Herói nivél 15</Text>
+        </View>
       </View>
 
       <View style={styles.subcontainerBottom}>
-        <DashedLine
-          style={{marginTop: -3}}
-          dashLength={10}
-          dashThickness={8}
-          dashGap={5}
-          dashColor={theme.colors.white}
-          dashStyle={{borderRadius: 5 }}
-          />
-        <DashedLine
-          style={{marginBottom: -3}}
-          dashLength={10}
-          dashThickness={8}
-          dashGap={5}
-          dashColor={theme.colors.white}
-          dashStyle={{borderRadius: 5 }}
-        />
+        
       </View>
     </View>
   );
