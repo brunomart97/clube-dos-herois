@@ -19,7 +19,7 @@ export function UserBadge() {
       <View style={styles.subcontainerTop}>
         <ImageBackground
           source={mapBackground}
-          style={styles.imageBackground}
+          style={styles.imageBackgroundMap}
         />
 
         <View style={styles.headerTop}>
@@ -42,7 +42,12 @@ export function UserBadge() {
       </View>
 
       <View style={styles.subcontainerBottom}>
-        
+        <View style={styles.bottomLeft}>
+          
+        </View>
+        <View style={styles.bottomRight}>
+          
+        </View>
       </View>
     </View>
   );

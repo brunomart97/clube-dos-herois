@@ -17,7 +17,7 @@ export const styles = StyleSheet.create({
     borderTopRightRadius: 30,
     backgroundColor: theme.colors.blackOne
   },
-  imageBackground: {
+  imageBackgroundMap: {
     width: '100%',
     height: '80%',
     position: "absolute",
@@ -95,10 +95,17 @@ export const styles = StyleSheet.create({
     width: '90%',
     height: 200,
     display: 'flex',
-    flexDirection: 'column',
-    justifyContent: 'space-between',
+    flexDirection: 'row',
     borderBottomLeftRadius: 30,
     borderBottomRightRadius: 30,
     backgroundColor: theme.colors.blackOne
+  },
+  bottomLeft: {
+    width: '60%',
+    height: 200
+  },
+  bottomRight: {
+    width: '40%',
+    height: 200
   }
 });
