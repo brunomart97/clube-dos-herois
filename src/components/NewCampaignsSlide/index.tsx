@@ -21,6 +21,9 @@ export function NewCampaignsSlide() {
         contentContainerStyle={{ paddingRight: 20 }}
       >
         <NewCampaignsCard />
+        <NewCampaignsCard />
+        <NewCampaignsCard />
+        <NewCampaignsCard />
       </ScrollView>
     </View>
   );

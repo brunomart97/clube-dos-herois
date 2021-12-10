@@ -14,30 +14,51 @@ export const styles = StyleSheet.create({
     paddingLeft: 20,
     marginRight: 20,
     borderRadius: 10,
-    backgroundColor: theme.colors.lightGray,
+    backgroundColor: theme.colors.blackOne,
     elevation: 2
   },
   // Left
   left: {
-    width: 60,
+    width: '30%',
     height: '100%',
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center'
   },
   image: {
-    width: 55,
-    height: 55,
+    width: 60,
+    height: 60,
     borderRadius: 100
   },
   //Right
   right: {
-
+    width: '70%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginLeft: 15
   },
   name: {
-    fontFamily: theme.fonts.poppins600,
+    fontFamily: theme.fonts.poppins500,
     fontSize: 18,
-    color: theme.colors.darkGray,
-    lineHeight: 25
+    color: theme.colors.fluorescentRed,
+    lineHeight: 20
+  },
+  city: {
+    maxWidth: '100%',
+    fontFamily: theme.fonts.poppins300,
+    fontSize: 12,
+    color: theme.colors.white,
+    lineHeight: 15
+  },
+  date: {
+    fontFamily: theme.fonts.poppins300,
+    fontSize: 12,
+    color: theme.colors.white,
+    lineHeight: 15,
+    paddingHorizontal: 10,
+    paddingVertical: 3,
+    borderRadius: 50,
+    backgroundColor: theme.colors.blackTwo
   }
 });

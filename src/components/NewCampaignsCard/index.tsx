@@ -5,7 +5,7 @@ import {
   Pressable,
   Image
 } from 'react-native';
-import { theme } from '../../global/styles/theme';
+import { AntDesign } from '@expo/vector-icons';
 
 import { styles } from './styles';
 
@@ -23,7 +23,14 @@ export function NewCampaignsCard() {
         </View>
 
         <View style={styles.right}>
-          <Text style={styles.name}>Pedro Ferreira</Text>
+          <Text style={styles.name}>Bruno Martins</Text>
+          <Text style={styles.city}>São Paulo, SP</Text>
+          <Text style={styles.date}>
+            <AntDesign
+              name="calendar"
+              size={12}
+              color="white"
+            />  10 Dez</Text>
         </View>
       </View>
     </Pressable>
