@@ -6,7 +6,7 @@ import { Fontisto } from '@expo/vector-icons';
 
 import { styles } from './styles';
 
-export function MainCard({
+export function HeroAreaCard({
   color,
   text,
   icon,
@@ -15,11 +15,10 @@ export function MainCard({
   return (
     <Pressable onPress={navigateToBadge}>
       <View style={[{backgroundColor: color}, styles.container]}>
-        <Text style={styles.title}>{text}</Text>
         {icon === 1 &&
           <FontAwesome
             name="qrcode"
-            size={80}
+            size={75}
             position="center"
             color={theme.colors.red}
           />
@@ -27,7 +26,7 @@ export function MainCard({
         {icon === 2 &&
           <Fontisto
             name="blood"
-            size={80}
+            size={75}
             position="center"
             color={theme.colors.red}
           />
@@ -35,11 +34,12 @@ export function MainCard({
         {icon === 3 &&
           <Fontisto
             name="blood-drop"
-            size={75}
+            size={70}
             position="center"
             color={theme.colors.red}
           />
         }
+        <Text style={styles.title}>{text}</Text>
       </View>
     </Pressable>
   );

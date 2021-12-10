@@ -6,18 +6,19 @@ export const styles = StyleSheet.create({
     width: 180,
     height: 200,
     display: 'flex',
-    justifyContent: 'space-around',
+    justifyContent: 'space-between',
     paddingTop: 20,
-    paddingRight: 35,
+    paddingRight: 40,
     paddingBottom: 20,
     paddingLeft: 20,
     marginRight: 20,
-    borderRadius: 30,
-    elevation: 3
+    borderRadius: 10,
+    elevation: 2
   },
   title: {
     fontFamily: theme.fonts.poppins600,
-    fontSize: 20,
-    color: theme.colors.darkGray
+    fontSize: 18,
+    color: theme.colors.darkGray,
+    lineHeight: 25
   }
 });

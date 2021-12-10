@@ -19,7 +19,7 @@ export const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'flex-start',
     paddingHorizontal: 20,
-    borderBottomRightRadius: 30,
+    borderBottomRightRadius: 20,
     backgroundColor: theme.colors.red
   }
 });

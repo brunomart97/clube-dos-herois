@@ -5,7 +5,8 @@ import { useNavigation } from '@react-navigation/native';
 import { styles } from './styles';
 
 import { MiniProfile } from '../../components/MiniProfile';
-import { MainSlide } from '../../components/MainSlide';
+import { HeroAreaSlide } from '../../components/HeroAreaSlide';
+import { NewCampaignsSlide } from '../../components/NewCampaignsSlide';
 
 export function Home() {
   const navigation = useNavigation<NavigationProps>();
@@ -17,9 +18,10 @@ export function Home() {
   return (
     <ScrollView style={styles.container}>
       <MiniProfile />
-      <MainSlide
+      <HeroAreaSlide
         navigateToBadge={navigateToBadge}
       />
+      <NewCampaignsSlide />
     </ScrollView>
   );
 }

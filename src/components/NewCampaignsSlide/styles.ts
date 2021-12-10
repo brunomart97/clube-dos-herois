@@ -3,20 +3,21 @@ import { theme } from '../../global/styles/theme';
 
 export const styles = StyleSheet.create({
   container: {
-    height: 330,
+    height: 170,
     display: 'flex',
     flexDirection: 'column',
-    justifyContent: 'space-around'
+    justifyContent: 'space-around',
+    marginTop: 20
   },
   title: {
     fontFamily: theme.fonts.poppins500,
     fontSize: 20,
     color: theme.colors.darkGray,
-    marginLeft: 20
+    marginLeft: 20,
+    marginBottom: 10
   },
   subcontainer: {
-    minHeight: 250,
-    maxHeight: 250,
+    height: 130,
     paddingLeft: 20
   }
 });

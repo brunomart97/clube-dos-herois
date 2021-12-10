@@ -8,9 +8,9 @@ import { theme } from '../../global/styles/theme';
 
 import { styles } from './styles';
 
-import { MainCard } from '../MainCard';
+import { HeroAreaCard } from '../HeroAreaCard';
 
-export function MainSlide({ navigateToBadge }: navigateToBadgeProps) {
+export function HeroAreaSlide({ navigateToBadge }: navigateToBadgeProps) {
   return (
     <View style={styles.container}>
       <Text style={styles.title}>Área do Herói</Text>
@@ -20,21 +20,21 @@ export function MainSlide({ navigateToBadge }: navigateToBadgeProps) {
         showsHorizontalScrollIndicator={false}
         contentContainerStyle={{ paddingRight: 20 }}
       >
-        <MainCard
+        <HeroAreaCard
           color={theme.colors.lightGray}
           text="Carteirinha do Clube"
           icon={1}
           navigateToBadge={navigateToBadge}
           />
-        <MainCard
+        <HeroAreaCard
           color={theme.colors.lightGray}
           text="Fazer Doação"
           icon={2}
           navigateToBadge={navigateToBadge}
           />
-        <MainCard
+        <HeroAreaCard
           color={theme.colors.lightGray}
-          text="Procurar Doadores"
+          text="Criar Campanha"
           icon={3}
           navigateToBadge={navigateToBadge}
         />
