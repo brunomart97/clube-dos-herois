@@ -13,7 +13,7 @@ import { NewCampaignsCard } from '../NewCampaignsCard';
 export function NewCampaignsSlide() {
   return (
     <View style={styles.container}>
-      <Text style={styles.title}>Últimas Campanhas</Text>
+      <Text style={styles.title}>Novas Campanhas</Text>
       <ScrollView
         style={styles.subcontainer}
         horizontal

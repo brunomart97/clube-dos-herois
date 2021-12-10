@@ -8,10 +8,7 @@ export const styles = StyleSheet.create({
     display: 'flex',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    paddingTop: 20,
-    paddingRight: 35,
-    paddingBottom: 20,
-    paddingLeft: 20,
+    padding: 15,
     marginRight: 20,
     borderRadius: 10,
     backgroundColor: theme.colors.blackOne,
@@ -19,37 +16,19 @@ export const styles = StyleSheet.create({
   },
   // Left
   left: {
-    width: '30%',
+    width: '35%',
     height: '100%',
     display: 'flex',
-    justifyContent: 'center',
+    flexDirection: 'column',
+    justifyContent: 'space-between',
     alignItems: 'center'
   },
   image: {
-    width: 60,
-    height: 60,
-    borderRadius: 100
-  },
-  //Right
-  right: {
-    width: '70%',
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    marginLeft: 15
-  },
-  name: {
-    fontFamily: theme.fonts.poppins500,
-    fontSize: 18,
-    color: theme.colors.fluorescentRed,
-    lineHeight: 20
-  },
-  city: {
-    maxWidth: '100%',
-    fontFamily: theme.fonts.poppins300,
-    fontSize: 12,
-    color: theme.colors.white,
-    lineHeight: 15
+    width: 55,
+    height: 55,
+    borderRadius: 100,
+    borderWidth: 3,
+    borderColor: theme.colors.blackTwo
   },
   date: {
     fontFamily: theme.fonts.poppins300,
@@ -60,5 +39,35 @@ export const styles = StyleSheet.create({
     paddingVertical: 3,
     borderRadius: 50,
     backgroundColor: theme.colors.blackTwo
+  },
+  //Right
+  right: {
+    width: '65%',
+    display: 'flex',
+    justifyContent: 'space-between',
+    alignItems: 'flex-start',
+    marginLeft: 10
+  },
+  name: {
+    fontFamily: theme.fonts.poppins500,
+    fontSize: 18,
+    color: theme.colors.white,
+    lineHeight: 20
+  },
+  bloodType: {
+    fontFamily: theme.fonts.poppins500,
+    fontSize: 18,
+    color: theme.colors.white,
+    lineHeight: 23,
+    padding: 5,
+    borderRadius: 5,
+    backgroundColor: theme.colors.fluorescentRed
+  },
+  city: {
+    maxWidth: '100%',
+    fontFamily: theme.fonts.poppins300,
+    fontSize: 12,
+    color: theme.colors.white,
+    lineHeight: 15
   }
 });

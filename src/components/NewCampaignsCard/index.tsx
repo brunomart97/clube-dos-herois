@@ -20,17 +20,18 @@ export function NewCampaignsCard() {
             source={{ uri: urlImage }}
             style={styles.image}
           />
-        </View>
-
-        <View style={styles.right}>
-          <Text style={styles.name}>Bruno Martins</Text>
-          <Text style={styles.city}>São Paulo, SP</Text>
           <Text style={styles.date}>
             <AntDesign
               name="calendar"
               size={12}
               color="white"
             />  10 Dez</Text>
+        </View>
+
+        <View style={styles.right}>
+          <Text style={styles.name}>Bruno Martins</Text>
+          <Text style={styles.bloodType}>B+</Text>
+          <Text style={styles.city}>São Paulo, SP</Text>
         </View>
       </View>
     </Pressable>
