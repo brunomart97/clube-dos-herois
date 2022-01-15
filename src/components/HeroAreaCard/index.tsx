@@ -1,10 +1,10 @@
 import React from 'react';
 import { View, Text, Pressable } from 'react-native';
-import { theme } from '../../global/styles/theme';
 import { FontAwesome } from '@expo/vector-icons'; 
 import { Fontisto } from '@expo/vector-icons';
 
 import { styles } from './styles';
+import { theme } from '../../global/styles/theme';
 
 export function HeroAreaCard({
   color,
