@@ -15,9 +15,15 @@ export function Home() {
     navigation.navigate('Badge');
   }
 
+  function navigateToProfile() {
+    navigation.navigate('Profile');
+  }
+
   return (
     <ScrollView style={styles.container}>
-      <MiniProfile />
+      <MiniProfile
+        navigateToProfile={navigateToProfile}
+      />
       <HeroAreaSlide
         navigateToBadge={navigateToBadge}
       />

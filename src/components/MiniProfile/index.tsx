@@ -2,13 +2,14 @@ import React from 'react';
 import {
   View,
   Text,
-  Image
+  Image,
+  Pressable
 } from 'react-native';
 import { FontAwesome } from '@expo/vector-icons';
 
 import { styles } from './styles';
 
-export function MiniProfile() {
+export function MiniProfile({ navigateToProfile }: navigateToProfileProps) {
   const urlImage: string = 'https://github.com/brunomart97.png';
 
   return (
@@ -34,10 +35,14 @@ export function MiniProfile() {
         </View>
 
         <View style={styles.right}>
-          <Image
-            source={{ uri: urlImage }}
-            style={styles.image}
-          />
+          <Pressable
+            onPress={navigateToProfile}
+          >
+            <Image
+              source={{ uri: urlImage }}
+              style={styles.image}
+            />
+          </Pressable>
         </View>
       </View>
 
