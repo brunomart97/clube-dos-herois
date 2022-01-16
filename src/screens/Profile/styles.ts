@@ -13,8 +13,6 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     marginVertical: 20,
     borderRadius: 10,
-    fontFamily: theme.fonts.poppins500,
-    fontSize: 20,
     backgroundColor: theme.colors.red,
     display: 'flex',
     flexDirection: 'row',
@@ -23,9 +21,9 @@ export const styles = StyleSheet.create({
   },
   buttonText: {
     fontFamily: theme.fonts.poppins500,
-    fontSize: 20,
+    fontSize: 18,
     marginLeft: 10,
-    paddingTop: 2,
+    paddingTop: 3,
     color: theme.colors.white
   }
 });

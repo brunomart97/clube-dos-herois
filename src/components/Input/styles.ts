@@ -9,7 +9,7 @@ export const styles = StyleSheet.create({
   },
   title: {
     fontFamily: theme.fonts.poppins500,
-    fontSize: 20,
+    fontSize: 18,
     color: theme.colors.darkGray,
   },
   input: {
@@ -18,7 +18,7 @@ export const styles = StyleSheet.create({
     paddingHorizontal: 20,
     borderRadius: 10,
     fontFamily: theme.fonts.poppins400,
-    fontSize: 20,
+    fontSize: 18,
     backgroundColor: theme.colors.lightGray
   }
 });

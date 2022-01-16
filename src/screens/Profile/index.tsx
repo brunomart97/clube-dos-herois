@@ -1,40 +1,57 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {
   ScrollView,
   Pressable,
   Text
 } from 'react-native';
-import { Ionicons } from '@expo/vector-icons';
 
 import { styles } from './styles';
-import { theme } from '../../global/styles/theme';
 
-import { Form } from '../../components/Form';
+import { Input } from '../../components/Input';
 
 export function Profile() {
+  const [name, setName] = useState("");
+  const [cep, setCep] = useState("");
+  const [phone, setPhone] = useState("");
+
   function handleSaveEdition() {
   }
 
   return (
     <ScrollView style={styles.container}>
-      <Form
+      <Input
         title="Nome"
+        inputMaskChange={(text: string) => setName(text)}
+        value={name}
         placeholder="Digite seu nome"
+        maxLength={40}
+        secureTextEntry={false}
       />
-      <Form
-        title="E-mail"
-        placeholder="Digite seu e-mail"
+
+      <Input
+        title="CEP"
+        mask="cep"
+        inputMaskChange={(text: string) => setCep(text)}
+        value={cep}
+        placeholder="Digite seu CEP"
+        maxLength={9}
+        secureTextEntry={false}
       />
+
+      <Input
+        title="Telefone"
+        mask="phone"
+        inputMaskChange={(text: string) => setPhone(text)}
+        value={phone}
+        placeholder="Digite seu telefone"
+        maxLength={14}
+        secureTextEntry={false}
+      />
+
       <Pressable
         style={styles.saveButton}
         onPress={handleSaveEdition}
       >
-        <Ionicons
-          name="md-save-outline"
-          size={23}
-          position="center"
-          color={theme.colors.white}
-        />
         <Text style={styles.buttonText}>Salvar</Text>
       </Pressable>
     </ScrollView>
